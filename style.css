@@ -1,0 +1,392 @@
+@font-face {
+	font-family: beon;
+	src: url(./fonts/beon/beon/beon-webfont.ttf);
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./fonts/Poppins/Poppins/Poppins-Regular.ttf);
+}
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
+	scroll-behavior:smooth;
+
+}
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+    font-size: 25px;
+	align-items: center;
+	z-index: 1000;
+	transition: .5s;
+}
+.logo
+{
+	font-size: 24px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: #fff;
+}
+header ul
+{
+	position: relative;
+	display: flex;
+}
+header ul li
+{
+	list-style: none;
+}
+header ul li a
+{
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	margin: 15px;
+	color: #fff;
+	transition: .5s;
+}
+section
+{
+	padding: 100px;
+}
+.banner{
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: url(./img/banner.jpg); */
+    background-color: black;
+    background-position: right;
+}
+.banner h2{
+    font-size: 3em;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: cadetblue;
+    font-family: beon;
+}
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: beon;
+}
+.banner h3{
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: beon;
+    color: wheat;
+    letter-spacing: 2px;
+}
+/* download button */
+.btn{
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #fff;
+    background: crimson;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: deepskyblue;
+
+}
+/* img */
+ .mypic{
+    width: 350px;
+    height:350px;
+    position: relative;
+    top: -200px;
+    left: 800px;
+    border:  double ;
+    
+    border-color: rgb(196, 216, 79) rgb(0, 255, 21) rgb(163, 28, 163) red ;
+} 
+
+
+
+/* end img */
+.txtbox{
+    position: relative;
+    bottom: -200px;
+}
+.about .about-title{
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.about .about-title h2{
+    font-size: 30px;
+}
+.about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+.about .about-content .about-img{
+    min-width: 50%;
+}
+.about .about-content .about-img img{
+    max-width: 100%;
+}
+.about .content h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about .content p{
+    text-align: justify;
+}
+span{
+    color: red;
+}
+.git{
+    width: 60px;
+    height: 50px;
+    top: 400px;
+    right: 300px;
+    position: relative;
+}
+.insta{
+    width: 100px;
+    height: 50px;
+    top: 400px;
+    right: 280px;
+    position: relative;
+}
+.ln{
+    width: 70px;
+    height: 40px;
+    top: 405px;
+    right: 280px;
+    position: relative;
+}
+.git:hover{
+    width: 100px;
+    height: 80px;
+}
+.insta:hover{
+    width: 100px;
+    height: 80px;
+}
+.ln:hover{
+    width: 80px;
+    height: 60px;
+}
+
+/* nav bar animation*/
+header.sticky{
+    padding:20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    background: #fff;
+}
+header.sticky .logo{
+    color: #111;
+}
+header.sticky ul li a{
+    color:#111;
+}
+.service
+{
+	background: #111;
+}
+.service .service-title
+{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.service .service-title h3
+{
+	font-size: 18px;
+}
+.service .service-content
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.service .service-content .serviceBox
+{
+	max-width: 340px;
+	padding: 40px 20px;
+	background: rgb(241, 238, 238);
+	color: rgb(19, 16, 16);
+	margin: 15px;
+	text-align: center;
+	transition: 0.5s;
+}
+.service .service-content .serviceBox:hover
+{
+	background: red;
+    font-size: 25px;
+}
+
+.pic{
+    width: 200px;
+    height: 150px;
+}
+
+.portfolio .title{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.portfolio .title h3{
+    font-size: 18px;
+}
+.portfolio-content{
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-img{
+    min-width: 50%;
+}
+.portfolio-img img{
+    max-width: 100%;
+}
+.portfolio-skill p{
+    margin-bottom: 20px;
+}
+.portfolio-skill progress{
+    width: 50%;
+}
+.contact-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.contact-title h3{
+    font-size: 18px;
+}
+.contactBox{
+    display: flex;
+    justify-content: space-between;
+
+}
+.contactInfo{
+    position: relative;
+    width: 40%;
+}
+.contactInfo .box{
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+}
+.contactInfo .box .icoBox{
+    min-width: 40px;
+    padding-top: 4px;
+    font-size: 24px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+}
+.formInfo{
+   min-width: 60%;
+}
+.formInfo h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.formInfo form{
+    display: flex;
+    flex-direction:column;
+}
+.formInfo form input,.formInfo form textarea{
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+}
+.formInfo form textarea{
+    min-height: 200px;
+}
+.formInfo form input[type='submit']{
+    background-color: deepskyblue;
+    text-transform: uppercase;
+
+}
+button{
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #fff;
+    background: crimson;
+    transition: 0.5s;
+}
+@media (max-width:991px){
+    header,header.sticky{
+        padding: 10px 50px;
+        z-index: 1000;
+    }
+    header ul li a
+	{
+		color: #111;
+	}
+    header.sticky .toogle{
+        filter: invert();
+    }
+    .menu
+	{
+		position: fixed;
+		top: 55px;
+		left: -100%;
+		width: 100%;
+		padding: 100px 50px;
+		background: #fff;
+		text-align: center;
+		display: block;
+		transition: 0.5s;
+		border-top: 2px solid rgba(0, 0, 0, 0.1);
+		z-index: 999;
+	}
+	.toggle
+	{
+		width: 40px;
+		height: 40px;
+		background: url('../img/menuOpen.png');
+		background-size: 30px;
+		background-position: center;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.toggle.active
+	{
+		width: 40px;
+		height: 40px;
+		background: url('./img/menuClosed.png');
+		background-size: 30px;
+		background-position: center;
+		cursor: pointer;
+		background-repeat: no-repeat;
+	}
+	.menu.active
+	{
+		left: 0;
+	}
+}
+.one:hover{
+    color:blueviolet;
+}
+
